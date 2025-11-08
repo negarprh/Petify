@@ -144,4 +144,5 @@ Petify/
 ### 👩‍💻 Authors
 
 **Developed by:** Negar Pirasteh - Betty Dang
-**College:** LaSalle College, Montréal
+
+---
