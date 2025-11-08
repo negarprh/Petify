@@ -1,0 +1,162 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#F6F7FB"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150px">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+
+            android:gravity="center"
+            >
+
+            <TextView
+                android:text="Create Account"
+                android:textColor="#0F0E0E"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Form -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Full Name"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:hint="Enter your full name"
+                android:padding="12dp"
+                android:background="#EFEFF4"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"/>
+
+            <View android:layout_height="10dp"
+                android:layout_width="wrap_content"
+            />
+
+            <TextView
+                android:text="Email"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:background="#EFEFF4"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"/>
+
+            <View android:layout_height="10dp"
+                android:layout_width="wrap_content"
+               />
+
+            <TextView
+                android:text="Password"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:hint="Create a password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:background="#EFEFF4"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"/>
+
+            <View android:layout_height="10dp"
+                android:layout_width="wrap_content"
+                />
+
+            <TextView
+                android:text="Confirm Password"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etConfirm"
+                android:hint="Re-enter your password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:background="#EFEFF4"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"/>
+
+            <View android:layout_height="10dp"
+                android:layout_width="wrap_content"
+                />
+
+            <TextView
+                android:text="Select Role"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioGroup
+                android:id="@+id/rgRole"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/rbUser"
+                    android:text="User"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/rbAdmin"
+                    android:text="Admin"
+                    android:layout_marginStart="16dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:text="Create Account"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#5B6CFF"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+
+        <!-- Divider text -->
+        <TextView
+            android:id="@+id/tvGoLogin"
+            android:text="Already have an account? Log in"
+            android:textColor="#5B6CFF"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,64 @@
+# ===== Android Studio / IntelliJ =====
+*.iml
+.idea/
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# ===== Gradle build =====
+.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+.gradle-app.setting
+
+# ===== Local configuration =====
+local.properties
+*.properties
+
+# ===== Firebase & Google Services =====
+# These contain API keys and project IDs. DO NOT UPLOAD.
+google-services.json
+app/google-services.json
+firebase.json
+.crashlytics/
+**/crashlytics-build.properties
+**/fabric.properties
+
+# ===== NDK / C++ =====
+.cxx/
+.externalNativeBuild/
+
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+
+# ===== Logs / Reports / Outputs =====
+*.log
+*/reports/
+*/outputs/
+captures/
+output.json
+
+# ===== APK / AAB / Bundle =====
+*.apk
+*.ap_
+*.aab
+
+# ===== Keystore / Signing =====
+*.jks
+*.keystore
+*.pem
+
+# ===== Test & Temporary files =====
+*.tmp
+*.orig
+*.bak
+*.swp
+
+# ===== Jetpack Compose / Kotlin cache =====
+*.ktlint*
+.kotlin/

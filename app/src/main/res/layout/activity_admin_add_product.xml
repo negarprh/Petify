@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7FB">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvHeader"
+                android:text="Add Product"
+                android:textColor="#121212"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="16dp" />
+
+        <!-- Product Image -->
+        <TextView android:text="Product Image" android:textColor="#111111" android:textSize="14sp" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:background="#FFFFFF"
+            android:contentDescription="Product image placeholder"
+            android:layout_marginTop="6dp" />
+
+        <View android:layout_width="match_parent" android:layout_height="8dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnSelectImage"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Select Image"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/blue" />
+
+            <View android:layout_width="8dp" android:layout_height="48dp" />
+
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="16dp" />
+
+        <!-- Title -->
+        <TextView android:text="Title" android:textColor="#111111" android:textSize="14sp" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="e.g., Dog Collar"
+            android:background="#FFFFFF"
+            android:paddingHorizontal="12dp"
+            android:textColor="#111111"
+            android:textColorHint="#666666"
+            android:layout_marginTop="6dp" />
+
+        <View android:layout_width="match_parent" android:layout_height="12dp" />
+
+        <!-- Price -->
+        <TextView android:text="Price" android:textColor="#111111" android:textSize="14sp" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="e.g., 12.99"
+            android:inputType="numberDecimal"
+            android:background="#FFFFFF"
+            android:paddingHorizontal="12dp"
+            android:textColor="#111111"
+            android:textColorHint="#666666"
+            android:layout_marginTop="6dp" />
+
+        <View android:layout_width="match_parent" android:layout_height="12dp" />
+
+        <!-- Stock -->
+        <TextView android:text="Stock" android:textColor="#111111" android:textSize="14sp" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtStock"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="e.g., 45"
+            android:inputType="number"
+            android:background="#FFFFFF"
+            android:paddingHorizontal="12dp"
+            android:textColor="#111111"
+            android:textColorHint="#666666"
+            android:layout_marginTop="6dp" />
+
+        <View android:layout_width="match_parent" android:layout_height="12dp" />
+
+        <!-- Category -->
+        <TextView android:text="Category" android:textColor="#111111" android:textSize="14sp" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtCategory"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="e.g., Accessories"
+            android:background="#FFFFFF"
+            android:paddingHorizontal="12dp"
+            android:textColor="#111111"
+            android:textColorHint="#666666"
+            android:layout_marginTop="6dp" />
+
+        <View android:layout_width="match_parent" android:layout_height="12dp" />
+
+        <!-- Description -->
+        <TextView android:text="Description" android:textColor="#111111" android:textSize="14sp" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Short description"
+            android:gravity="top"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:textColor="#111111"
+            android:textColorHint="#666666"
+            android:layout_marginTop="6dp" />
+
+        <View android:layout_width="match_parent" android:layout_height="16dp" />
+
+        <!-- Actions -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Add Product"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/blue" />
+
+        <View android:layout_width="match_parent" android:layout_height="10dp" />
+
+
+    </LinearLayout>
+</ScrollView>
