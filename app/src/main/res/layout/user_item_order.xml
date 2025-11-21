@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="12dp"
+    android:layout_marginBottom="10dp">
+
+    <!-- Order ID -->
+    <TextView
+        android:id="@+id/tvUserOrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order #123456"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#111111" />
+
+    <!-- Total + Status -->
+    <TextView
+        android:id="@+id/tvUserOrderAmountStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: $45.90 • Status: Paid"
+        android:textSize="14sp"
+        android:textColor="#444444"
+        android:layout_marginTop="4dp" />
+
+    <!-- Address line -->
+    <TextView
+        android:id="@+id/tvUserOrderAddressLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1234 Example St, Apt 5"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="6dp" />
+
+    <!-- Postal + city + country -->
+    <TextView
+        android:id="@+id/tvUserOrderAddressMeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="H3B 1X1, Montreal, Canada"
+        android:textSize="13sp"
+        android:textColor="#777777" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+</LinearLayout>
