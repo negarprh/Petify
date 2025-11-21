@@ -30,9 +30,9 @@ public class UserHomePageActivity extends AppCompatActivity implements UserProdu
     private FirebaseAuth auth;
     private FirebaseFirestore db;
 
-    // full list from Firestore
+
     private final List<Product> fullProductList = new ArrayList<>();
-    // currently displayed list (filtered)
+
     private final List<Product> productList     = new ArrayList<>();
 
     private UserProductAdapter adapter;
@@ -61,7 +61,7 @@ public class UserHomePageActivity extends AppCompatActivity implements UserProdu
         imgProfile.setOnClickListener(v ->
                 startActivity(new Intent(UserHomePageActivity.this, UserProfileActivity.class)));
 
-        // search listener
+
         editSearch.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
@@ -91,7 +91,7 @@ public class UserHomePageActivity extends AppCompatActivity implements UserProdu
                         fullProductList.add(p);
                     }
 
-                    // initially show all
+
                     productList.addAll(fullProductList);
                     adapter.notifyDataSetChanged();
                 })
@@ -104,7 +104,7 @@ public class UserHomePageActivity extends AppCompatActivity implements UserProdu
         productList.clear();
 
         if (q.isEmpty()) {
-            // show all
+
             productList.addAll(fullProductList);
         } else {
             for (Product p : fullProductList) {

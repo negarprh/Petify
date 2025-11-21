@@ -8,7 +8,7 @@ public class CartItem {
     private String imageUrl;
     private int quantity;
 
-    // Required empty constructor for Firestore
+
     public CartItem() {
     }
 

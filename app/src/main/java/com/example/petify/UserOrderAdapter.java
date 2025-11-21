@@ -60,19 +60,19 @@ public class UserOrderAdapter extends BaseAdapter {
 
         OrderModel order = orders.get(position);
 
-        // Short order id
+
         String shortId = order.getId();
         if (shortId != null && shortId.length() > 8) {
             shortId = shortId.substring(0, 8);
         }
         h.tvOrderId.setText("Order #" + shortId);
 
-        // Total + status
+
         double total = order.getTotalAmount();
         String status = order.getStatus() != null ? order.getStatus() : "unknown";
         h.tvAmountStatus.setText(String.format("Total: $%.2f • Status: %s", total, status));
 
-        // Address line
+
         String line = order.getShippingAddressLine();
         String pc   = order.getShippingPostalCode();
         String city = order.getShippingCity();

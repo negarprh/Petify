@@ -58,8 +58,6 @@ public class UserProfileActivity extends AppCompatActivity {
 
 
 
-        // Orders button can later open user order-history activity
-
         btnLogout.setOnClickListener(v -> {
             auth.signOut();
             Intent i = new Intent(UserProfileActivity.this, AuthOptionsActivity.class);

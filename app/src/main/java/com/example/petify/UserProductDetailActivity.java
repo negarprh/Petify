@@ -51,7 +51,7 @@ public class UserProductDetailActivity extends AppCompatActivity {
         tvDetailPrice      = findViewById(R.id.tvDetailPrice);
         btnDetailAddToCart = findViewById(R.id.btnDetailAddToCart);
 
-        // Read data from intent
+
         Intent i = getIntent();
         productId = i.getStringExtra("productId");
         title     = i.getStringExtra("title");
@@ -60,7 +60,7 @@ public class UserProductDetailActivity extends AppCompatActivity {
         description = i.getStringExtra("description");
         imageUrl  = i.getStringExtra("imageUrl");
 
-        // Bind to UI
+
         tvDetailTitle.setText(title);
         tvDetailCategory.setText(category);
         tvDetailDescription.setText(description);
@@ -99,10 +99,10 @@ public class UserProductDetailActivity extends AppCompatActivity {
 
         cartRef.get().addOnSuccessListener(doc -> {
             if (doc.exists()) {
-                // increase quantity
+
                 cartRef.update("quantity", FieldValue.increment(1));
             } else {
-                // create new cart item
+
                 CartItem newItem = new CartItem(
                         productId,
                         title,
@@ -115,7 +115,7 @@ public class UserProductDetailActivity extends AppCompatActivity {
 
             Toast.makeText(this, "Added to cart", Toast.LENGTH_SHORT).show();
 
-            // Go to cart screen
+
             Intent intent = new Intent(UserProductDetailActivity.this, ShoppingCartActivity.class);
             startActivity(intent);
             finish();

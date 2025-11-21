@@ -7,7 +7,7 @@
     android:padding="12dp"
     android:layout_marginBottom="10dp">
 
-    <!-- Payment ID -->
+
     <TextView
         android:id="@+id/tvPaymentId"
         android:text="Payment #987654"

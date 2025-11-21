@@ -10,7 +10,6 @@ public class PaymentModel {
     private String status;
     private long createdAt;
 
-    // Required empty constructor for Firestore
     public PaymentModel() {}
 
     public PaymentModel(String id, String userId, String userName, String userEmail,

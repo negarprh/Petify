@@ -99,7 +99,7 @@ public class AdminEditProductActivity extends AppCompatActivity {
         if (requestCode == REQ_PICK_IMAGE && resultCode == RESULT_OK &&
                 data != null && data.getData() != null) {
             newImageUri = data.getData();
-            imgProduct.setImageURI(newImageUri);   // show preview
+            imgProduct.setImageURI(newImageUri);
         }
     }
 

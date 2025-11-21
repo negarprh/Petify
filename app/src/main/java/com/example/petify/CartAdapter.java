@@ -67,7 +67,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
                 }
             }).start();
         } else {
-            // If imageUrl is null/missing we show the default icon
+
             holder.imgProductImage.setImageResource(android.R.drawable.gallery_thumb);
         }
 

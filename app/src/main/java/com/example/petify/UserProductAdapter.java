@@ -45,7 +45,7 @@ public class UserProductAdapter extends RecyclerView.Adapter<UserProductAdapter.
         holder.tvCategory.setText(product.getCategory());
         holder.tvPrice.setText("$" + product.getPrice());
 
-        // Load image (simple manual way)
+
         if (product.getImageUrl() != null && !product.getImageUrl().isEmpty()) {
             new Thread(() -> {
                 try {
@@ -64,7 +64,7 @@ public class UserProductAdapter extends RecyclerView.Adapter<UserProductAdapter.
             holder.imgProduct.setImageResource(android.R.color.darker_gray);
         }
 
-        // Add-to-cart button (same behavior as before)
+
         holder.btnAddToCart.setOnClickListener(v -> {
             if (listener != null) listener.onAddToCart(product);
         });

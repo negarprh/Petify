@@ -87,7 +87,7 @@ public class SignUpActivity extends AppCompatActivity {
             return;
         }
 
-        // Force every in-app signup to be a normal user
+
         String role = "user";
 
         progressDialog.show();

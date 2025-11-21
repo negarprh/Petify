@@ -13,7 +13,7 @@ public class UserProfile {
     private String country;
 
     public UserProfile() {
-        // required by Firestore
+
     }
 
     public UserProfile(String id, String name, String email, String role,

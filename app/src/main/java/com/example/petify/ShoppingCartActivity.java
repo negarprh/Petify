@@ -47,7 +47,7 @@ public class ShoppingCartActivity extends AppCompatActivity implements CartAdapt
         recyclerView.setAdapter(adapter);
 
         btnContinueShopping.setOnClickListener(v -> {
-            // go back to user home
+
             finish();
         });
 

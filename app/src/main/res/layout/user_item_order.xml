@@ -7,7 +7,7 @@
     android:padding="12dp"
     android:layout_marginBottom="10dp">
 
-    <!-- Order ID -->
+
     <TextView
         android:id="@+id/tvUserOrderId"
         android:layout_width="wrap_content"
@@ -17,7 +17,7 @@
         android:textSize="16sp"
         android:textColor="#111111" />
 
-    <!-- Total + Status -->
+
     <TextView
         android:id="@+id/tvUserOrderAmountStatus"
         android:layout_width="wrap_content"
@@ -27,7 +27,7 @@
         android:textColor="#444444"
         android:layout_marginTop="4dp" />
 
-    <!-- Address line -->
+
     <TextView
         android:id="@+id/tvUserOrderAddressLine"
         android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
         android:textColor="#555555"
         android:layout_marginTop="6dp" />
 
-    <!-- Postal + city + country -->
+
     <TextView
         android:id="@+id/tvUserOrderAddressMeta"
         android:layout_width="wrap_content"

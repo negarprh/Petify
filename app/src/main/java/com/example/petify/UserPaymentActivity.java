@@ -35,7 +35,7 @@ public class UserPaymentActivity extends AppCompatActivity {
 
     // Stripe test keys
     private final String PublishableKey =
-            "xxx";
+            "xx";
     private final String SecretKey =
             "xx";
 
@@ -49,8 +49,8 @@ public class UserPaymentActivity extends AppCompatActivity {
 
     private PaymentSheet paymentSheet;
 
-    // Stripe amount (in cents) and currency
-    private String Amount;            // e.g. "1500"
+
+    private String Amount;
     private final String Currency = "usd";
 
     private FirebaseAuth auth;
@@ -68,14 +68,14 @@ public class UserPaymentActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         db   = FirebaseFirestore.getInstance();
 
-        // Get total from ShoppingCartActivity
+
         double total = getIntent().getDoubleExtra("totalAmount", 0.0);
         tvAmount.setText(String.format("Total: $%.2f", total));
 
         long amountInCents = Math.round(total * 100);
         Amount = String.valueOf(amountInCents);
 
-        // Stripe init
+
         PaymentConfiguration.init(this, PublishableKey);
         paymentSheet = new PaymentSheet(this, this::onPaymentResult);
 
@@ -87,11 +87,11 @@ public class UserPaymentActivity extends AppCompatActivity {
             }
         });
 
-        // Start Stripe flow by creating customer
+
         createCustomer();
     }
 
-    // ----------------- STRIPE API CALLS -----------------
+
 
     private void createCustomer() {
         StringRequest request = new StringRequest(
@@ -236,7 +236,6 @@ public class UserPaymentActivity extends AppCompatActivity {
         }
     }
 
-    // ----------------- FIRESTORE ORDER + PAYMENT -----------------
 
     private void saveOrderAndClearCart() {
         if (auth.getCurrentUser() == null) {
@@ -249,7 +248,7 @@ public class UserPaymentActivity extends AppCompatActivity {
         double total = getIntent().getDoubleExtra("totalAmount", 0.0);
         long now     = System.currentTimeMillis();
 
-        // First load user profile so we can include address
+
         db.collection("users").document(uid).get()
                 .addOnSuccessListener(doc -> {
                     UserProfile profile = doc.toObject(UserProfile.class);
@@ -261,7 +260,7 @@ public class UserPaymentActivity extends AppCompatActivity {
                     String city    = profile != null ? profile.getCity()          : null;
                     String country = profile != null ? profile.getCountry()       : null;
 
-                    // Build order
+
                     Map<String, Object> orderData = new HashMap<>();
                     orderData.put("userId", uid);
                     orderData.put("userName", name);
@@ -278,7 +277,7 @@ public class UserPaymentActivity extends AppCompatActivity {
                     db.collection("orders")
                             .add(orderData)
                             .addOnSuccessListener(orderRef -> {
-                                // Also create payment document
+
                                 Map<String, Object> paymentData = new HashMap<>();
                                 paymentData.put("orderId", orderRef.getId());
                                 paymentData.put("userId", uid);
@@ -292,11 +291,11 @@ public class UserPaymentActivity extends AppCompatActivity {
                                 db.collection("payments")
                                         .add(paymentData)
                                         .addOnSuccessListener(paymentRef -> {
-                                            // Clear cart after saving payment
+
                                             clearCart(uid);
                                         })
                                         .addOnFailureListener(e -> {
-                                            // even if payment doc fails, still clear cart
+
                                             clearCart(uid);
                                         });
                             })
@@ -324,7 +323,7 @@ public class UserPaymentActivity extends AppCompatActivity {
                     for (QueryDocumentSnapshot d : snapshot) {
                         d.getReference().delete();
                     }
-                    finish(); // back to previous screen (cart → profile/home)
+                    finish();
                 })
                 .addOnFailureListener(e -> finish());
     }

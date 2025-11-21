@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="150px">
 
-        <!-- Header -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"/>
         </LinearLayout>
 
-        <!-- Form -->
+
         <LinearLayout
             android:orientation="vertical"
             android:padding="16dp"
@@ -116,7 +116,7 @@
 
         </LinearLayout>
 
-        <!-- Button -->
+
         <Button
             android:id="@+id/btnSignUp"
             android:text="Create Account"
@@ -127,7 +127,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"/>
 
-        <!-- Divider text -->
+
         <TextView
             android:id="@+id/tvGoLogin"
             android:text="Already have an account? Log in"
