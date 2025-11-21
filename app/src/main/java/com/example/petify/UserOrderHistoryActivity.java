@@ -63,7 +63,7 @@ public class UserOrderHistoryActivity extends AppCompatActivity {
                         orderList.add(order);
                     }
 
-                    // sort by createdAt DESC on client side
+
                     Collections.sort(orderList,
                             (o1, o2) -> Long.compare(o2.getCreatedAt(), o1.getCreatedAt()));
 

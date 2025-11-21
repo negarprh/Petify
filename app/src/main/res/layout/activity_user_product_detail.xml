@@ -12,7 +12,7 @@
         android:padding="16dp"
         android:layout_gravity="center">
 
-        <!-- Product image -->
+
         <ImageView
             android:id="@+id/imgDetailProduct"
             android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             android:scaleType="centerCrop"
             android:background="#DDDDDD" />
 
-        <!-- Title -->
+
         <TextView
             android:id="@+id/tvDetailTitle"
             android:layout_width="match_parent"
@@ -31,7 +31,7 @@
             android:textStyle="bold"
             android:textColor="#111111" />
 
-        <!-- Category -->
+
         <TextView
             android:id="@+id/tvDetailCategory"
             android:layout_width="match_parent"
@@ -41,7 +41,7 @@
             android:textSize="14sp"
             android:textColor="#666666" />
 
-        <!-- Price -->
+
         <TextView
             android:id="@+id/tvDetailPrice"
             android:layout_width="match_parent"
@@ -63,7 +63,7 @@
             android:textColor="#444444" />
 
 
-        <!-- Add to cart -->
+
         <Button
             android:id="@+id/btnDetailAddToCart"
             android:layout_width="match_parent"

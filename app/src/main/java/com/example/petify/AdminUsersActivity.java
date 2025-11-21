@@ -24,7 +24,7 @@ public class AdminUsersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_users); // uses your second XML
+        setContentView(R.layout.activity_admin_users);
 
         db = FirebaseUtils.getFirestore();
 
@@ -58,12 +58,12 @@ public class AdminUsersActivity extends AppCompatActivity {
 
                         if (u != null) {
 
-                            // set Firestore doc ID if needed
+
                             if (u.getId() == null || u.getId().isEmpty()) {
                                 u.setId(doc.getId());
                             }
 
-                            // filter: ONLY show normal users
+
                             if ("user".equalsIgnoreCase(u.getRole())) {
                                 users.add(u);
                             }
@@ -89,11 +89,10 @@ public class AdminUsersActivity extends AppCompatActivity {
     }
 
     private void deleteUser(UserProfile user) {
-        // This deletes the document from Firestore "users" collection.
-        // It does NOT delete the Firebase Auth account.
+
         String docId = (user.getId() != null && !user.getId().isEmpty())
                 ? user.getId()
-                : user.getEmail(); // fallback if you used email as docId
+                : user.getEmail();
 
         db.collection("users")
                 .document(docId)

@@ -12,7 +12,7 @@
         android:gravity="center"
         android:layout_marginTop="150dp">
 
-        <!-- Header -->
+
         <TextView
             android:text="User Login"
             android:textColor="#009688"
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"/>
 
-        <!-- Form -->
+
         <LinearLayout
             android:orientation="vertical"
             android:padding="16dp"
@@ -78,7 +78,7 @@
 
         </LinearLayout>
 
-        <!-- Login Button -->
+
         <Button
             android:id="@+id/btnUserLogin"
             android:text="Login"
@@ -89,7 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"/>
 
-        <!-- Bottom link -->
+
         <TextView
             android:id="@+id/tvUserGoSignup"
             android:text="Don't have an account? Sign up"

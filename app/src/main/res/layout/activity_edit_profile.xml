@@ -17,7 +17,7 @@
             android:textStyle="bold"
             android:layout_marginBottom="16dp" />
 
-        <!-- Name -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
             android:padding="10dp"
             android:layout_marginBottom="12dp" />
 
-        <!-- Address line -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
             android:padding="10dp"
             android:layout_marginBottom="12dp" />
 
-        <!-- Postal code -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
             android:padding="10dp"
             android:layout_marginBottom="12dp" />
 
-        <!-- City -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
             android:padding="10dp"
             android:layout_marginBottom="12dp" />
 
-        <!-- Country -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

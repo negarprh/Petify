@@ -17,8 +17,6 @@ public class OrderModel {
 
 
 
-
-    // Required empty constructor for Firestore
     public OrderModel() {}
 
     public OrderModel(String id, String userId, String userName, String userEmail,

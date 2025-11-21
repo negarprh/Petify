@@ -64,14 +64,13 @@ public class AdminOrderAdapter extends BaseAdapter {
 
         OrderModel order = orderList.get(position);
 
-        // Shorter order id (optional)
+
         String shortId = order.getId();
         if (shortId != null && shortId.length() > 8) {
             shortId = shortId.substring(0, 8);
         }
         h.tvOrderId.setText("Order #" + shortId);
 
-        // Name + Email
         StringBuilder meta = new StringBuilder();
         if (order.getUserName() != null && !order.getUserName().trim().isEmpty()) {
             meta.append(order.getUserName());
@@ -82,12 +81,12 @@ public class AdminOrderAdapter extends BaseAdapter {
         }
         h.tvOrderMeta.setText(meta.toString());
 
-        // Amount
+
         h.tvOrderAmount.setText(
                 String.format("Total: $%.2f", order.getTotalAmount())
         );
 
-        // Address line
+
         String line = order.getShippingAddressLine();
         if (line != null && !line.trim().isEmpty()) {
             h.tvOrderAddressLine.setText(line);
@@ -95,7 +94,7 @@ public class AdminOrderAdapter extends BaseAdapter {
             h.tvOrderAddressLine.setText("No address");
         }
 
-        // Postal + city + country
+
         String pc      = order.getShippingPostalCode();
         String city    = order.getShippingCity();
         String country = order.getShippingCountry();
@@ -115,7 +114,7 @@ public class AdminOrderAdapter extends BaseAdapter {
 
         h.tvOrderAddressMeta.setText(addrMeta.toString());
 
-        // Status
+
         String status = order.getStatus() != null ? order.getStatus() : "unknown";
         h.tvOrderStatus.setText("Status: " + status);
 

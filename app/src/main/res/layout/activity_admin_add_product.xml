@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- Header -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
@@ -31,7 +31,7 @@
 
         <View android:layout_width="match_parent" android:layout_height="16dp" />
 
-        <!-- Product Image -->
+
         <TextView android:text="Product Image" android:textColor="#111111" android:textSize="14sp" android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <ImageView
@@ -67,7 +67,7 @@
 
         <View android:layout_width="match_parent" android:layout_height="16dp" />
 
-        <!-- Title -->
+
         <TextView android:text="Title" android:textColor="#111111" android:textSize="14sp" android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <EditText
@@ -83,7 +83,7 @@
 
         <View android:layout_width="match_parent" android:layout_height="12dp" />
 
-        <!-- Price -->
+
         <TextView android:text="Price" android:textColor="#111111" android:textSize="14sp" android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <EditText
@@ -100,7 +100,7 @@
 
         <View android:layout_width="match_parent" android:layout_height="12dp" />
 
-        <!-- Stock -->
+
         <TextView android:text="Stock" android:textColor="#111111" android:textSize="14sp" android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <EditText
@@ -117,7 +117,7 @@
 
         <View android:layout_width="match_parent" android:layout_height="12dp" />
 
-        <!-- Category -->
+
         <TextView android:text="Category" android:textColor="#111111" android:textSize="14sp" android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <EditText
@@ -133,7 +133,7 @@
 
         <View android:layout_width="match_parent" android:layout_height="12dp" />
 
-        <!-- Description -->
+
         <TextView android:text="Description" android:textColor="#111111" android:textSize="14sp" android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <EditText
@@ -150,7 +150,7 @@
 
         <View android:layout_width="match_parent" android:layout_height="16dp" />
 
-        <!-- Actions -->
+
         <Button
             android:id="@+id/btnSave"
             android:layout_width="match_parent"

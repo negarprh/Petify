@@ -6,7 +6,7 @@
     android:gravity="center"
     android:padding="20dp">
 
-    <!-- User name -->
+
     <TextView
         android:id="@+id/tvUserName"
         android:layout_width="wrap_content"
@@ -16,7 +16,7 @@
         android:textStyle="bold"
         android:textColor="#1A237E" />
 
-    <!-- Address line -->
+
     <TextView
         android:id="@+id/tvUserAddressLine"
         android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
         android:textColor="#555555"
         android:layout_marginTop="4dp" />
 
-    <!-- Postal + city + country -->
+
     <TextView
         android:id="@+id/tvUserAddressMeta"
         android:layout_width="wrap_content"
@@ -36,8 +36,7 @@
         android:textColor="#777777"
         android:layout_marginBottom="24dp" />
 
-    <!-- Edit profile -->
-    <Button
+     <Button
         android:id="@+id/btnAccount"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -48,7 +47,7 @@
         android:textColor="@android:color/white"
         android:layout_marginBottom="10dp" />
 
-    <!-- Change password -->
+
     <Button
         android:id="@+id/btnChangePassword"
         android:layout_width="250dp"
@@ -60,7 +59,7 @@
         android:textColor="@android:color/white"
         android:layout_marginBottom="10dp" />
 
-    <!-- Cart -->
+
     <Button
         android:id="@+id/btnShoppingCart"
         android:layout_width="250dp"
@@ -72,7 +71,7 @@
         android:textColor="@android:color/white"
         android:layout_marginBottom="10dp" />
 
-    <!-- Orders -->
+
     <Button
         android:id="@+id/btnOrders"
         android:layout_width="250dp"
@@ -84,7 +83,7 @@
         android:textColor="@android:color/white"
         android:layout_marginBottom="10dp" />
 
-    <!-- Home -->
+
     <Button
         android:id="@+id/btnBacktoMainPage"
         android:layout_width="250dp"
@@ -97,7 +96,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp" />
 
-    <!-- Logout -->
+
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="250dp"

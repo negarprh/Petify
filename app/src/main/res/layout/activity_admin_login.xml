@@ -12,7 +12,7 @@
         android:gravity="center"
         android:layout_marginTop="150dp">
 
-        <!-- Header -->
+
         <TextView
             android:text="Admin Login"
             android:textColor="#3F51B5"
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"/>
 
-        <!-- Form -->
+
         <LinearLayout
             android:orientation="vertical"
             android:padding="16dp"
@@ -79,7 +79,7 @@
 
         </LinearLayout>
 
-        <!-- Login Button -->
+
         <Button
             android:id="@+id/btnAdminLogin"
             android:text="Login"
@@ -90,7 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"/>
 
-        <!-- Bottom link -->
+
         <TextView
             android:id="@+id/tvAdminGoSignup"
             android:text="Don't have an account? Sign up"

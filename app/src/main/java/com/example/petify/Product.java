@@ -11,7 +11,7 @@ public class Product {
     private String imageUrl;
     private long createdAt;
 
-    // Empty constructor required by Firestore
+
     public Product() {
     }
 

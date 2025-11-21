@@ -96,7 +96,7 @@ public class AdminDashboardActivity extends AppCompatActivity {
 
 
 
-        // Optional: cards tap the same as buttons
+
         if (cardProducts != null) {
             cardProducts.setOnClickListener(v -> btnViewProducts.performClick());
         }
