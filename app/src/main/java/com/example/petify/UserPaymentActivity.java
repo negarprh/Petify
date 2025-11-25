@@ -38,9 +38,9 @@ public class UserPaymentActivity extends AppCompatActivity {
 
     // Stripe test keys
     private final String PublishableKey =
-            "xxx";
+            "xx";
     private final String SecretKey =
-            "xxx";
+            "xx";
 
     private static final String CustomersURL    = "https://api.stripe.com/v1/customers";
     private static final String EphemeralKeyURL = "https://api.stripe.com/v1/ephemeral_keys";
