@@ -37,7 +37,6 @@ It includes **Stripe API integration** for real online payment processing.
 
 ![](/Demo/adminDashboard.png)
 
-
 ---
 
 # 🧭 Project Overview
